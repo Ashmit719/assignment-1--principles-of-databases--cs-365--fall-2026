@@ -1,0 +1,53 @@
+<!-- The students element contains one or more student elements. -->
+<!ELEMENT students (student+)>
+
+<!-- Each student contains the student's information in this order. -->
+<!ELEMENT student (name, email, phone, academic-status, gpa, major, minor, enrollment-status, advisor, initial-enrollment-date, graduation-date)>
+
+<!-- Each student must have an id attribute containing the student ID. -->
+<!ATTLIST student id CDATA #REQUIRED>
+
+<!-- The name element contains the parts of the student's name. -->
+<!ELEMENT name (first-name, middle-name?, last-name, preferred-name?)>
+
+<!-- The first-name element contains text. -->
+<!ELEMENT first-name (#PCDATA)>
+
+<!-- The middle-name element contains text when a middle name is provided. -->
+<!ELEMENT middle-name (#PCDATA)>
+
+<!-- The last-name element contains text. -->
+<!ELEMENT last-name (#PCDATA)>
+
+<!-- The preferred-name element contains text when a preferred name is provided. -->
+<!ELEMENT preferred-name (#PCDATA)>
+
+<!-- The email element contains the student's email address. -->
+<!ELEMENT email (#PCDATA)>
+
+<!-- The phone element contains the student's phone number. -->
+<!ELEMENT phone (#PCDATA)>
+
+<!-- The academic-status element contains the student's academic year. -->
+<!ELEMENT academic-status (#PCDATA)>
+
+<!-- The gpa element contains the student's grade point average. -->
+<!ELEMENT gpa (#PCDATA)>
+
+<!-- The major element contains the student's major. -->
+<!ELEMENT major (#PCDATA)>
+
+<!-- The minor element contains the student's minor. -->
+<!ELEMENT minor (#PCDATA)>
+
+<!-- The enrollment-status element contains the student's enrollment status. -->
+<!ELEMENT enrollment-status (#PCDATA)>
+
+<!-- The advisor element contains the student's advisor. -->
+<!ELEMENT advisor (#PCDATA)>
+
+<!-- The initial-enrollment-date element contains the student's initial enrollment date. -->
+<!ELEMENT initial-enrollment-date (#PCDATA)>
+
+<!-- The graduation-date element contains the student's graduation date. -->
+<!ELEMENT graduation-date (#PCDATA)>
